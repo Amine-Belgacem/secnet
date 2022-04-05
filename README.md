@@ -8,3 +8,10 @@ Secnet is a multithreaded security and networking tool that supports processing 
 - `get` Send single/multiple GET request(s) to single/multiple hosts.
 - `myip` Fetch external IP address.
 - `mywlan` Discover devices connected to Wifi network.
+
+## Download & Install
+Clone the repository.
+
+    git clone https://github.com/Amine-Belkacem/Secnet.git
+    
+Run `/release/secnet-v0.9.exe` in command-line.
