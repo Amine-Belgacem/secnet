@@ -1,7 +1,7 @@
 # Secnet
  Multithreaded security and network tool
 
-Available commands: [scan, ping, lookup, rlookup, resolve, myi,p mywlan, get]
+Commands: '[scan, ping, lookup, rlookup, resolve, myi,p mywlan, get]'
 
 Command: scan [options..]
 
