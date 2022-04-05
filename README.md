@@ -10,8 +10,7 @@ Secnet is a multithreaded security and networking tool that supports processing 
 - `mywlan` Discover devices connected to Wifi network.
 
 ## Download & Install
-Clone the repository.
+ 1. Clone the repository.
+        git clone https://github.com/Amine-Belkacem/Secnet.git
+ 2. Run `/release/secnet-v0.9.exe` in command-line.
 
-    git clone https://github.com/Amine-Belkacem/Secnet.git
-    
-Run `/release/secnet-v0.9.exe` in command-line.
