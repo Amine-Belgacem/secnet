@@ -5,7 +5,7 @@ Available commands: [scan, ping, lookup, rlookup, resolve, myi,p mywlan, get]
 
 Command: scan [options..]
 
-    -ip         IP address(es) of the host to scan in SECNET::IP format.
+-ip         IP address(es) of the host to scan in SECNET::IP format.
                 SECNET::IP Format allowed values:
                     - IP (e.g. '127.0.0.1');
                     - IP-Range (e.g. '127.0.0.1-127.0.0.255)'
