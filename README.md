@@ -7,7 +7,7 @@ Secnet is a multithreaded security and networking tool that supports processing 
 - `resolve` Rosolve domain name and return fetched response(s).
 - `get` Send single/multiple GET request(s) to single/multiple hosts.
 - `myip` Fetch external IP address.
-- `mywlan` Discover devices connected to Wifi network.
+- `mywlan` Discover devices connected to Wi-Fi network.
 
 ## Download & Install
  1. Clone the repository.
