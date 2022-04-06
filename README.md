@@ -20,8 +20,6 @@ Run in command-line.
 ## Usage
 Usage: `secnet [command] [options...]`
 
-Available commands: [scan, ping, lookup, rlookup, resolve, myi,p mywlan, get]
-
 Network Port Scanner over TCP
 
     Command: scan [options..]
