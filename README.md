@@ -25,27 +25,27 @@ Available commands: [scan, ping, lookup, rlookup, resolve, myi,p mywlan, get]
 Network Port Scanner over TCP
 
     Command: scan [options..]
-        -ip         IP address(es) of the host to scan in SECNET::IP format.
-                    SECNET::IP Format allowed values:
-                        - IP (e.g. '127.0.0.1');
-                        - IP-Range (e.g. '127.0.0.1-127.0.0.255)'
-                        - IP-Subnet-Prefix (e.g. '127.0.0.1/24)'
-                        - IP-File in file URI scheme (e.g. 'file://example.txt)'
-        -port       Port(s) nubmer of the host to scan in SECNET-PORT format.
-                    SECNET::PORT Format allowed values:
-                        - Port (e.g. '80')
-                        - Port-Range (e.g. '10-200')
-                        - Port-File in file URI scheme(e.g. 'file://example.txt)'
-        -timeout    Second(s) to wait before abandoning request (e.g. '10')
-        -thread     Number of worker threads (e.g. '5')
-        -output     Output file path (e.g. './example.txt')
+    -ip         IP address(es) of the host to scan in SECNET::IP format.
+                SECNET::IP Format allowed values:
+                    - IP (e.g. '127.0.0.1');
+                    - IP-Range (e.g. '127.0.0.1-127.0.0.255)'
+                    - IP-Subnet-Prefix (e.g. '127.0.0.1/24)'
+                    - IP-File in file URI scheme (e.g. 'file://example.txt)'
+    -port       Port(s) nubmer of the host to scan in SECNET-PORT format.
+                SECNET::PORT Format allowed values:
+                    - Port (e.g. '80')
+                    - Port-Range (e.g. '10-200')
+                    - Port-File in file URI scheme(e.g. 'file://example.txt)'
+    -timeout    Second(s) to wait before abandoning request (e.g. '10')
+    -thread     Number of worker threads (e.g. '5')
+    -output     Output file path (e.g. './example.txt')
 
 Ping over TCP
 
     Command: ping [options..]
-        -timeout    Second(s) to wait before abandoning request (e.g. '10')
-        -thread     Number of worker threads (e.g. '5')
-        -output     Output file path (e.g. './example.txt')
+    -timeout    Second(s) to wait before abandoning request (e.g. '10')
+    -thread     Number of worker threads (e.g. '5')
+    -output     Output file path (e.g. './example.txt')
 
 DNS Lookup Tool
 
