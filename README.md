@@ -3,7 +3,7 @@ Secnet is a multithreaded security and networking tool that supports processing 
 - `ping` TCP ping in single/mass.
 - `scan` Scan network ports in single/mass over TCP.
 - `lookup` Lookup domain names in single/mass.
-- `rlookup` Reverse lookup IP addreses in single/mass.
+- `rlookup` Reverse lookup IP address(es) in single/mass.
 - `resolve` Rosolve domain name and return fetched response(s).
 - `get` Send single/multiple GET request(s) to single/multiple hosts.
 - `myip` Fetch external IP address.
@@ -18,7 +18,7 @@ Run in command-line.
     /release/secnet-v0.9.exe -help
 
 ## Usage
-Usage: secnet [command] [options...]
+Usage: `secnet [command] [options...]`
 
 Available commands: [scan, ping, lookup, rlookup, resolve, myi,p mywlan, get]
 
