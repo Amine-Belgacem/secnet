@@ -1,5 +1,5 @@
 # Secnet
-Secnet is a multithreaded security and networking tool supporting processing in mass. The tool provides the following utilities:
+Secnet is a multithreaded security and networking tool that supports processing in mass. The tool provides the following utilities:
 - `ping` TCP ping in single/mass.
 - `scan` Scan network ports in single/mass over TCP.
 - `lookup` Lookup domain names in single/mass.
@@ -20,7 +20,7 @@ Run in command-line.
 ## Usage
 Usage: `secnet [command] [options...]`
 
-Network Port Scanner over TCP
+**Network Port Scanner over TCP**
 
     Command: scan [options..]
     -ip         IP address(es) of the host to scan in SECNET::IP format.
@@ -38,14 +38,14 @@ Network Port Scanner over TCP
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-Ping over TCP
+**Ping over TCP**
 
     Command: ping [options..]
     -timeout    Second(s) to wait before abandoning request (e.g. '10')
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-DNS Lookup Tool
+**DNS Lookup Tool**
 
     Command: lookup [options..]
     -domain     Domain name(s) to lookup in SECNET::DNS format.
@@ -55,14 +55,14 @@ DNS Lookup Tool
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-Reverse DNS Lookup Tool
+**Reverse DNS Lookup Tool**
 
     Command: rlookup [options..]
     -ip         IP address(s) to reverse lookup in SECNET::IP format.
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-DNS Resolver
+**DNS Resolver**
 
     Command: resolve [options..]
     -domain     Domain name(s) to resolve in SECNET::DNS format.
@@ -70,19 +70,19 @@ DNS Resolver
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-External IP Address Discovery Tool
+**External IP Address Discovery Tool**
 
     Command: myip [options..]
     -timeout    Second(s) to wait before abandoning request (e.g. '10')
 
-Wi-fi Connected Devices Discovery Tool
+**Wi-fi Connected Devices Discovery Tool**
 
     Command: mywlan [options..]
     -timeout    Second(s) to wait before abandoning request (e.g. '10')
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-GET Request Sender
+**GET Request Sender**
 
     Command: get [options..]
     -url        URL(s) to get in SECNET::URL format.
