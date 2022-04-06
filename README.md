@@ -15,6 +15,6 @@ Secnet is a multithreaded security and networking tool that supports processing 
         git clone https://github.com/Amine-Belkacem/Secnet.git
  2. Run in command-line.
 
-        `/release/secnet-v0.9.exe -help
+        /release/secnet-v0.9.exe -help
 
 
