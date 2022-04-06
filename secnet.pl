@@ -660,7 +660,7 @@ sub getSubnetPrefix {
 sub getWifiGateway {
     my $interface = shift;
     my $command = "interface ip show addresses $interface";
-    my $result = run("./bin/netsh.exe", $command, sub {
+    my $result = run("netsh.exe", $command, sub {
         my $line = shift;
         return $1 if ($_ =~ /\bDefault\sGateway:\s*([0-9.]+)\b/)
     });
