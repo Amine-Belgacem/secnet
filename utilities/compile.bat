@@ -1,0 +1,1 @@
+pp -o secnet.exe ../secnet.pl

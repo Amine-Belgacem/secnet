@@ -14,6 +14,8 @@
 # - [mywlan] Discover devices connected to Wifi network.
 
 # Note: The tool is for Win64/32, Adjustements needed for Linux.
+# Note: 'oui.txt' contains MAC vendor information and needs to be updated manually.
+# Latest Oui can be downloaded from here https://standards-oui.ieee.org/oui/oui.txt
 
 # This tool may be used for legal purposes only.  Users take full responsibility
 # for any actions performed using this tool. The author accepts no liability
@@ -34,6 +36,7 @@ use Net::DNS::Resolver;
 use LWP::UserAgent;
 use IO::Handle;
 use Data::Validate::URI;
+use Cwd qw(abs_path);
 
 # Helper subroutines:
 
@@ -678,6 +681,17 @@ sub getMACbyIP {
     return $result ? $result : "unknown"
 }
 
+# Search for vendor in 'oui.txt'
+sub getVendorbyMac {
+    my $macBase = substr (shift, 0, 8);
+    isFile(my $filePath = dirname(abs_path($0))."/oui.txt");
+    my @fileContent = readFileIntoArray($filePath);
+    foreach (@fileContent) {
+        return $1 if ($_ =~ /\b$macBase\s*\(hex\)\s*(.*)\b/i );
+    }
+    return 'unknown'  
+}
+
 # Validate and return [mywlan] options.
 sub getMywlanOptions {
     my %options = (
@@ -714,9 +728,10 @@ sub mywlan {
             my $macAddr = getMACbyIP(@$task[0]);
             my $hostname = gethostbyaddr(inet_aton(@$task[0]), AF_INET);
             $hostname = "unknown" if (!$hostname);
+            my $device = getVendorbyMac($macAddr);
             my $respTime = sprintf("%.2f", $result[1]);
             toFile($fileHandle, @$task[0]."\n") if $fileHandle;
-            print "- @$task[0] => name:$hostname mac-addr:$macAddr\n"
+            print "- @$task[0] => name:$hostname mac-addr:$macAddr device:$device\n"
         } {}
     }, $options{'thread'})
 }
