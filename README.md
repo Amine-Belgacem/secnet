@@ -1,5 +1,5 @@
 # Secnet
-Secnet is a multithreaded security and networking tool that supports processing tasks in bulk. The tool provides the following utilities:
+Secnet is a multithreaded security and networking tool designed to efficiently handle bulk processing tasks. It offers the following essential utilities:
 - `ping` TCP ping.
 - `scan` Scan network ports over TCP.
 - `lookup` Lookup domain names.
