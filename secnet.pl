@@ -1,13 +1,13 @@
 #!/usr/bin/perl
 
 # Secnet - Multithreaded Security and Network Tool
-# Copyright (C) 2012 Amine Belkacem
+# Copyright (C) 2012 Amine Belgacem
 
 # The tool proposes the following utilities:
-# - [ping] TCP ping in single/mass.
-# - [scan] Scan network ports in single/mass over TCP.
-# - [lookup] Lookup domain names in single/mass.
-# - [rlookup] Reverse lookup IP addreses in single/mass.
+# - [ping] TCP ping.
+# - [scan] Scan network ports over TCP.
+# - [lookup] Lookup domain names.
+# - [rlookup] Reverse lookup IP addreses.
 # - [resolve] Rosolve domain name and return fetched response(s).
 # - [get] Send single/multiple GET request(s) to single/multiple hosts.
 # - [myip] Fetch external IP address.
@@ -329,7 +329,7 @@ sub tcpConnect {
 }
 
 # Validate and return [scan] options.
-sub geScanOptions {
+sub getScanOptions {
     my @defaultPorts = ("21", "22", "23", "53", "80", "111", "135", "139", "445");
     my @defautips = ("127.0.0.1");
     my %options = (
@@ -351,10 +351,10 @@ sub geScanOptions {
 # Validate arguments, prepare tasks and run [scan] threads.
 sub scan () {
     print "\n[scan] Network Port Scanner over TCP\n\n";
-    my %options = geScanOptions();
+    my %options = getScanOptions();
     my @tasks;
     for my $ip (@{$options{'ips'}}) {
-        for my $port (@{$options{'ports'}}) { 
+        for my $port (@{$options{'ports'}}) {
             my @task = ($ip, $port, $options{'timeout'});
             push (@tasks, \@task)
         }
@@ -771,7 +771,7 @@ sub getGetOptions {
     return %options    
 }
 
-# Send GET request to single/mass hosts.
+# Send GET request to host(s).
 sub get {
     print "\n[get] GET Request Sender\n\n";
     my %options = getGetOptions();
@@ -836,7 +836,7 @@ sub errorWrap {
     chomp($error);
     $error .= '.' if (substr($error, length($error) - 1, 1) ne '.');
     print "Error: ".$error."\n";
-    print "-> exit.\n"
+    print "-> Exit.\n"
 }
 $SIG{__WARN__} = \&errorWrap;
 
