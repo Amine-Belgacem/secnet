@@ -45,7 +45,7 @@ Usage: `secnet [command] [options...]`
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-**DNS Lookup Tool**
+**DNS Lookup**
 
     Command: lookup [options..]
     -domain     Domain name(s) to lookup in SECNET::DNS format.
@@ -55,7 +55,7 @@ Usage: `secnet [command] [options...]`
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-**Reverse DNS Lookup Tool**
+**Reverse DNS Lookup**
 
     Command: rlookup [options..]
     -ip         IP address(s) to reverse lookup in SECNET::IP format.
@@ -70,12 +70,12 @@ Usage: `secnet [command] [options...]`
     -thread     Number of worker threads (e.g. '5')
     -output     Output file path (e.g. './example.txt')
 
-**External IP Address Discovery Tool**
+**External IP Address Discovery**
 
     Command: myip [options..]
     -timeout    Second(s) to wait before abandoning request (e.g. '10')
 
-**Wi-fi Connected Devices Discovery Tool**
+**Wi-fi Connected Devices Discovery**
 
     Command: mywlan [options..]
     -timeout    Second(s) to wait before abandoning request (e.g. '10')
