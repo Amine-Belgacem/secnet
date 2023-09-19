@@ -15,7 +15,7 @@ Clone repository.
     git clone https://github.com/Amine-Belkacem/Secnet.git
 Run in command-line.
 
-    /release/secnet-v0.9.exe -help
+    /release/secnet-v0.9.exe
 
 ## Usage
 Usage: `secnet [command] [options...]`
