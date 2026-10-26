@@ -12,7 +12,7 @@
 ## Download & Install
 Clone repository.
 
-    git clone https://github.com/Amine-Belkacem/Secnet.git
+    git clone https://github.com/Amine-Belgacem/secnet.git
 Run in command-line.
 
     /release/secnet-v0.9.exe

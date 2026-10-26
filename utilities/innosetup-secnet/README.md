@@ -6,7 +6,7 @@ Download and install innosetup from [official website](https://jrsoftware.org/) 
 
 Clone repository.
 
-    git clone https://github.com/Amine-Belkacem/inno-cmd-template.git
+    git clone https://github.com/Amine-Belgacem/inno-cmd-template.git
 
 Replace `myprog.exe` with your utility. 
 
