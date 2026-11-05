@@ -4,6 +4,10 @@ Secnet combines common network investigations behind a single Perl command-line 
 
 Its shared options for workers, timeouts, file input, and output let you apply similar checks to multiple targets without manually repeating each lookup. It is useful for command-line troubleshooting and batch network checks, particularly in the original Windows environment where its helper utilities are supplied.
 
+![Screenshot of secnet](images/help.png)
+
+*Excerpt of the bundled Secnet CLI’s usage text, printed when run without a command.*
+
 ## Commands
 
 - `ping` and `scan`: TCP connectivity and port checks.
