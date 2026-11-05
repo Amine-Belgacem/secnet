@@ -1,6 +1,8 @@
 # Secnet
 
-A multithreaded Perl networking toolkit with TCP checks, DNS lookups, HTTP requests, and local network discovery.
+Secnet combines common network investigations behind a single Perl command-line interface. Check TCP connectivity and ports, perform forward or reverse DNS lookups, send HTTP GET requests, discover the external IP address, or inspect devices on a local Wi-Fi network.
+
+Its shared options for workers, timeouts, file input, and output let you apply similar checks to multiple targets without manually repeating each lookup. It is useful for command-line troubleshooting and batch network checks, particularly in the original Windows environment where its helper utilities are supplied.
 
 ## Commands
 
